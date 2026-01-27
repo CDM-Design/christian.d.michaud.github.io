@@ -83,6 +83,20 @@ h2 {
     max-width: 90%;
 }
 
+.project img {
+    height: auto;
+}
+
+.project.featured {
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .project.featured {
+        grid-column: span 1;
+    }
+}
+
 /* ---------- LIGHTBOX ---------- */
 
 .lightbox {
@@ -187,7 +201,7 @@ footer {
 
 </div>
 
-<h2 style="margin-top:120px;">Other Works</h2>
+<h2 style="margin-top:80px;">Other Works</h2>
 
 <div class="projects">
 
@@ -195,7 +209,7 @@ footer {
 <a onclick="openLightbox(['Project Images/P2_Crystal_Goblet_ChristianMichaud.jpg'],'Crystal Goblet')">
 <img src="Project Images/P2_Crystal_Goblet_ChristianMichaud.jpg">
 </a>
-<p>Detailed illustration focusing on transparency and reflections.</p>
+<p>Detailed document focusing on transparency and reflections.</p>
 </div>
 
 <div class="project">
@@ -207,6 +221,50 @@ footer {
 <img src="Project Images/Michaud_Christian_MonsterBugs_Page_1.jpg">
 </a>
 <p>Character design project combining imaginative creatures and playful illustration.</p>
+</div>
+
+<div class="project">
+<a onclick="openLightbox([
+'Project Images/P8_Michaud_Christian.jpg'
+
+],'CCA Seasonal Exhibitions Posters.')">
+<img src="Project Images/P8_Michaud_Christian.jpg">
+</a>
+<p>Seasonal exhibition posters featuring bold typography and dynamic visual composition to promote cultural events.</p>
+</div>
+
+<div class="project featured">
+<a onclick="openLightbox([
+'Project Images/Michaud_Christian_P3_Finals.jpg'
+
+],'Explorations of Letterforms and Abstractions')">
+<img src="Project Images/Michaud_Christian_P3_Finals.jpg">
+</a>
+<p>Abstract explorations of letterform structure and geometric composition, investigating the relationship between form and space.</p>
+</div>
+
+<div class="project">
+<a onclick="openLightbox([
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_01.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_02.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_03.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_04.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_05.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_06.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_07.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_08.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_09.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_10.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_11.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_12.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_13.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_14.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_15.jpg',
+'Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_16.jpg'
+],'PLP4 Booklet')">
+<img src="Project Images/PLP4_Booklet/PLP4_Michaud_Christian_Page_01.jpg">
+</a>
+<p>Multi-page booklet design showcasing comprehensive layout and editorial design principles.</p>
 </div>
 
 </div>
@@ -287,3 +345,4 @@ document.addEventListener("keydown", e => {
 
 </body>
 </html>
+
